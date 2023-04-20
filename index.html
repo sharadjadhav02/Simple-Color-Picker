@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Color Picker</title>
+</head>
+<body>
+    <div class="h-screen overflow-hidden relative bg-slate-300 grid justify-center items-center content-center space-y-8">
+        <div class="lg:block hidden">
+            <span class="absolute bg-sky-500 w-96 h-96 -top-20 -right-20 rounded-full"></span>
+            <span class="absolute bg-teal-500 w-96 h-96 -bottom-20 -left-20 rounded-full"></span>
+        </div>
+        <div>
+            <h1 class="text-xl font-bold">
+                A Simple Color Picker Tool
+            </h1>
+        </div>
+        <div class="w-52 h-52 rounded-xl shadow-xl" id="box">
+        </div>
+        <div class="flex bg-inherit items-center space-x-3">
+            <input type="color" class="h-8 w-16 bg-inherit" id="color-picker" value="#6a5acd">
+            <input type="text" class="border-2 px-2 bg-inherit border-blue-500 rounded-sm h-6 w-32 outline-none" readonly id="hex-code">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
